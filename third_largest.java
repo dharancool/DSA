@@ -13,7 +13,8 @@ class third_largest{
         for(int i=0;i<n;i++){
             arr[i]=in.nextInt();
         }
-        
+
+        //Sort array
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
                 if(arr[i]>arr[j]){
@@ -21,12 +22,11 @@ class third_largest{
                     arr[i]=arr[j];
                     arr[j]=temp;
                 }
-                else{
-                    continue;
-                }
+               
             }
         }
 
+        //Result
         int result=arr[n-3];
         System.out.println(result);
     }
